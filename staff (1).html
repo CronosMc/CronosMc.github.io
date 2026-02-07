@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CronosMc | Staff</title>
+    <style>
+        body { margin: 0; background: #222; color: white; font-family: sans-serif; }
+        
+        nav {
+            background: #3d2b1f;
+            border-bottom: 4px solid #2d8a2d;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav-links a { color: white; text-decoration: none; margin-left: 20px; font-weight: bold; }
+
+        .container { padding: 50px 10%; text-align: center; }
+
+        .staff-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .staff-card {
+            background: #333;
+            padding: 20px;
+            border-radius: 10px;
+            border-bottom: 4px solid #55FF55;
+        }
+
+        /* Generatore di teste Minecraft automatico */
+        .staff-img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 15px;
+            image-rendering: pixelated; /* Mantiene l'effetto pixel */
+        }
+
+        .rank-admin { color: #ff5555; font-weight: bold; }
+        .rank-mod { color: #55ffff; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div style="font-weight: bold;">CRONOS<span style="color:#55FF55">MC</span></div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="staff.html">Staff</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>I NOSTRI STAFF</h1>
+        <p>Il team che rende CronosMc un posto migliore.</p>
+
+        <div class="staff-grid">
+            <div class="staff-card">
+                <img src="https://mc-heads.net/avatar/Mattialascaro" alt="Owner" class="staff-img">
+                <h3>Mattialascaro</h3>
+                <p class="rank-admin">FOUNDER</p>
+                <p class="desc-admin">Il potente, supremo assoluto Founder di CronosMc</p>
+            </div>
+            <div class="staff-grid">
+            <div class="staff-card">
+                <img src="https://mc-heads.net/avatar/Marco" alt="Owner" class="staff-img">
+                <h3>Marco</h3>
+                <p class="rank-admin">Sr.Admin</p>
+                <p class="desc-admin">Il Sr.Admin combinaguai ma anche il primo staff di CronosMc</p>
+            </div>
+
+            <div class="staff-card">
+                <img src="https://mc-heads.net/avatar/Game_Invicible26" alt="Moderatore" class="staff-img">
+                <h3>Game_Invicible26</h3>
+                <p class="rank-mod">MOD-DEV</p>
+                <p class="desc-mod">Il Developer più bravo di CronosMc, anche Mod</p>
+            </div>
+            <div class="staff-card">
+                <img src="https://mc-heads.net/avatar/ImNotMugm" alt="Moderatore" class="staff-img">
+                <h3>ImNotMugm</h3>
+                <p class="rank-mod">HELPER</p>
+                <p class="desc-mod">L'Helper di CronosMc</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

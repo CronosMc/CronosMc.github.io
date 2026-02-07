@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CronosMc | Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --mc-green: #55FF55;
+            --mc-dark-green: #2d8a2d;
+            --mc-dirt: #3d2b1f;
+            --mc-stone: #333333;
+        }
+
+        body {
+            margin: 0;
+            background: #1a1a1a;
+            color: white;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        /* Navbar in stile Minecraft */
+        nav {
+            background: var(--mc-dirt);
+            border-bottom: 4px solid var(--mc-dark-green);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .nav-links a:hover { color: var(--mc-green); }
+
+        /* Hero con sfondo a blocchi */
+        .hero {
+            height: 60vh;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://wallpaperaccess.com/full/466315.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 8px solid var(--mc-stone);
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            color: var(--mc-green);
+            text-shadow: 4px 4px #000;
+            margin: 0;
+        }
+
+        .ip-box {
+            background: #000;
+            padding: 15px 25px;
+            border: 3px solid var(--mc-green);
+            margin-top: 20px;
+            cursor: pointer;
+            font-family: monospace;
+        }
+
+        .section { padding: 50px 10%; text-align: center; }
+
+        footer { background: #000; padding: 20px; text-align: center; color: #666; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div style="font-size: 1.5rem; font-weight: bold;">CRONOS<span style="color:var(--mc-green)">MC</span></div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="staff.html">Staff</a>
+            <a href="#">Regolamento</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>CRONOS MC</h1>
+        <p>Entra nel server Minecraft più epico!</p>
+        <div class="ip-box" onclick="copyIP()">CronosMc.falixsrv.me</div>
+    </header>
+
+    <section class="section">
+        <h2>Perché sceglierci?</h2>
+        <p>Survival, Economia reale e una community pronta ad accoglierti.</p>
+    </section>
+
+    <footer>&copy; 2026 CronosMc Network</footer>
+
+    <script>
+        function copyIP() {
+            navigator.clipboard.writeText("CronosMc.falixsrv.me");
+        }
+    </script>
+</body>
+</html>
