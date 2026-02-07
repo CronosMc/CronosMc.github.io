@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CronosMc | Regolamento</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --mc-green: #55FF55;
+            --mc-dark-green: #2d8a2d;
+            --mc-dirt: #3d2b1f;
+            --mc-gold: #ffaa00;
+            --mc-red: #ff5555;
+        }
+
+        body {
+            margin: 0;
+            background: #1a1a1a;
+            color: #ecf0f1;
+            font-family: 'Segoe UI', sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Navbar */
+        nav {
+            background: var(--mc-dirt);
+            border-bottom: 4px solid var(--mc-dark-green);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .nav-links a:hover { color: var(--mc-green); }
+
+        /* Contenitore Regolamento */
+        .rules-container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #222;
+            padding: 40px;
+            border-radius: 10px;
+            border: 2px solid #333;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .header-rules {
+            text-align: center;
+            border-bottom: 2px solid var(--mc-green);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .header-rules h1 {
+            color: var(--mc-green);
+            margin: 0;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+        }
+
+        .rule-section {
+            margin-bottom: 30px;
+            background: #2a2a2a;
+            padding: 20px;
+            border-left: 5px solid var(--mc-gold);
+            border-radius: 5px;
+        }
+
+        .rule-section h2 {
+            color: var(--mc-gold);
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .rule-section h2 i { font-size: 1.2rem; }
+
+        .rule-item {
+            margin-bottom: 15px;
+        }
+
+        .rule-item strong {
+            color: #fff;
+            display: block;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .important-note {
+            background: rgba(255, 85, 85, 0.1);
+            border: 1px solid var(--mc-red);
+            padding: 15px;
+            color: var(--mc-red);
+            text-align: center;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        footer { text-align: center; padding: 40px; color: #555; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div style="font-size: 1.5rem; font-weight: bold;">CRONOS<span style="color:var(--mc-green)">MC</span></div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="staff.html">Staff</a>
+            <a href="regole.html">Regolamento</a>
+        </div>
+    </nav>
+
+    <div class="rules-container">
+        <div class="header-rules">
+            <h1>REGOLAMENTO INTEGRALE</h1>
+            <p>L'ingresso nel server implica la lettura e l'accettazione totale delle norme.</p>
+        </div>
+
+        <div class="rule-section">
+            <h2><i class="fas fa-users"></i> I. RISPETTO</h2>
+            <div class="rule-item">
+                <strong>Tolleranza Zero:</strong> Vietato ogni tipo di insulto, bullismo, razzismo, omofobia o discriminazione.
+            </div>
+            <div class="rule-item">
+                <strong>Tossicità e Flame:</strong> Provocazioni e drama non sono ammessi. Sii un giocatore di classe.
+            </div>
+            <div class="rule-item">
+                <strong>Linguaggio:</strong> Modera il volgare. Le imprecazioni eccessive sono sanzionabili.
+            </div>
+            <div class="rule-item">
+                <strong>Rispetto dello Staff:</strong> Mancanze di rispetto o ghost-ping allo staff comporteranno sanzioni immediate.
+            </div>
+        </div>
+
+        <div class="rule-section" style="border-left-color: #55ffff;">
+            <h2 style="color: #55ffff;"><i class="fas fa-comments"></i> II. GESTIONE CHAT E ANTI-SPAM</h2>
+            <div class="rule-item">
+                <strong>Flood & Chaos:</strong> Vietato inviare blocchi di messaggi identici o stringhe senza senso.
+            </div>
+            <div class="rule-item">
+                <strong>Pubblicità (Self-Promo):</strong> Vietato inviare link di altri server o canali senza autorizzazione.
+            </div>
+            <div class="rule-item">
+                <strong>Wall of Text & Caps:</strong> Evita di scrivere interamente in MAIUSCOLO.
+            </div>
+        </div>
+
+        <div class="rule-section" style="border-left-color: var(--mc-green);">
+            <h2 style="color: var(--mc-green);"><i class="fas fa-hammer"></i> III. REGOLE SPECIFICHE SURVIVAL</h2>
+            <div class="rule-item">
+                <strong>Fair Play:</strong> L'uso di Client Modificati (X-Ray, KillAura, Fly, ecc.) comporta il <strong>BAN PERMANENTE</strong>.
+            </div>
+            <div class="rule-item">
+                <strong>Exploiting:</strong> Sfruttare bug per duplicare item è vietato. Ogni bug va segnalato via Ticket.
+            </div>
+            <div class="rule-item">
+                <strong>Accattonaggio:</strong> Non chiedere allo staff modalità Creative, OP o item.
+            </div>
+        </div>
+
+        <div class="rule-section" style="border-left-color: #aa00aa;">
+            <h2 style="color: #aa00aa;"><i class="fas fa-gavel"></i> IV & V. VOCALE E SISTEMA</h2>
+            <div class="rule-item">
+                <strong>Inquinamento Acustico:</strong> Vietato urlare o usare distorsori vocali molesti.
+            </div>
+            <div class="rule-item">
+                <strong>Gerarchia Sanzioni:</strong> Warn ➔ Mute ➔ Kick ➔ Ban Temporaneo ➔ Ban Permanente.
+            </div>
+            <div class="rule-item">
+                <strong>Contestazioni:</strong> Se ritieni una sanzione ingiusta, apri un Ticket. Le lamentele in chat pubblica verranno ignorate.
+            </div>
+        </div>
+
+        <div class="important-note">
+            LO STAFF HA IL DIRITTO DI INTERVENIRE PER SALVAGUARDARE IL SERVER ANCHE IN SITUAZIONI NON ESPLICITAMENTE SCRITTE.
+        </div>
+    </div>
+
+    <footer>&copy; 2026 CronosMc Network - Rispetta il branco.</footer>
+
+</body>
+</html>
