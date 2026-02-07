@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CronosMc | Contattaci</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --mc-green: #55FF55;
+            --mc-dark-green: #2d8a2d;
+            --mc-dirt: #3d2b1f;
+            --mc-stone: #333333;
+            --mc-border: #000000;
+        }
+
+        body {
+            margin: 0;
+            background: #1a1a1a;
+            color: white;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        /* Navbar */
+        nav {
+            background: var(--mc-dirt);
+            border-bottom: 4px solid var(--mc-dark-green);
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .nav-links a:hover { color: var(--mc-green); }
+
+        /* Container Modulo */
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 30px;
+            background: #2c2c2c;
+            border: 4px solid var(--mc-stone);
+            box-shadow: 10px 10px 0px rgba(0,0,0,0.3);
+        }
+
+        h1 { color: var(--mc-green); text-align: center; text-transform: uppercase; }
+        p { text-align: center; color: #bbb; margin-bottom: 30px; }
+
+        form { display: flex; flex-direction: column; gap: 20px; }
+
+        .form-group { display: flex; flex-direction: column; text-align: left; }
+
+        label { margin-bottom: 8px; font-weight: bold; color: var(--mc-green); }
+
+        input, textarea {
+            padding: 12px;
+            background: #111;
+            border: 2px solid var(--mc-stone);
+            color: white;
+            font-size: 1rem;
+            border-radius: 4px;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: var(--mc-green);
+        }
+
+        /* Bottone stile Minecraft */
+        .btn-submit {
+            background: #555;
+            color: white;
+            padding: 15px;
+            border: none;
+            border-bottom: 4px solid #000;
+            border-right: 4px solid #000;
+            font-weight: bold;
+            font-size: 1.1rem;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: 0.1s;
+        }
+
+        .btn-submit:hover {
+            background: var(--mc-dark-green);
+        }
+
+        .btn-submit:active {
+            border-bottom: 0;
+            border-right: 0;
+            margin-top: 4px;
+            margin-left: 4px;
+        }
+
+        footer { text-align: center; padding: 40px; color: #555; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div style="font-size: 1.5rem; font-weight: bold;">CRONOS<span style="color:var(--mc-green)">MC</span></div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="staff.html">Staff</a>
+            <a href="regole.html">Regolamento</a>
+            <a href="contatti.html">Contatti</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Modulo Segnalazioni</h1>
+        <p>Compila il modulo sottostante. La tua richiesta sarà inviata direttamente all'amministrazione.</p>
+        
+        <form action="https://formspree.io/f/Mattialascaro134@gmail.com" method="POST">
+            
+            <div class="form-group">
+                <label for="mc-name">Nome Minecraft</label>
+                <input type="text" id="mc-name" name="Minecraft-Username" placeholder="Es. Notch" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Tua Email (per la risposta)</label>
+                <input type="email" id="email" name="_replyto" placeholder="tua@email.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Di che cosa hai bisogno?</label>
+                <textarea id="message" name="messaggio" rows="6" placeholder="Descrivi qui la tua segnalazione o richiesta..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Invia Segnalazione</button>
+        </form>
+    </div>
+
+    <footer>&copy; 2026 CronosMc - Amministrazione</footer>
+
+</body>
+</html>
